@@ -2,8 +2,8 @@
 
 import { styled, Box } from '@mui/material';
 
-import img1 from "/home/yuvraj/Clouture/client/src/Images/home-page/BottomBanner1.jpg";
-import img2 from "/home/yuvraj/Clouture/client/src/Images/home-page/BottomBanner2.jpg";
+import img1 from "/home/yuvraj/Clouture/client/src/Images/home_page/BottomBanner1.jpg";
+import img2 from "/home/yuvraj/Clouture/client/src/Images/home_page/BottomBanner2.jpg";
 
 const BannerBox = styled(Box)`
     height: 300px;

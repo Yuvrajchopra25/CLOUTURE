@@ -10,15 +10,14 @@ const IconBtn = styled('div')`
     top: calc(1.9em);
     left: calc(67em);
     z-Index: 1;
-    color: black;
 `;
 
 const Icons = () => {
   return (
         <IconBtn>
-            <Favorite style={{ height: '1.5em', width:'1.5em', paddingRight: '0.5em' }} />
-            <ShoppingCart style={{ height: '1.5em', width:'1.5em', paddingRight: '0.5em' }} />
-            <AccountCircle style={{ height: '1.5em', width:'1.5em'}} />
+            <Favorite style={{ height: '1.5em', width:'1.5em', marginRight: '0.5em', color: 'black',  cursor: 'pointer'}} />
+            <ShoppingCart style={{ height: '1.5em', width:'1.5em', marginRight: '0.5em', color: 'black',  cursor: 'pointer'}} />
+            <AccountCircle style={{ height: '1.5em', width:'1.5em', color: 'black',  cursor: 'pointer' }}/>
         </IconBtn>
   )
 }

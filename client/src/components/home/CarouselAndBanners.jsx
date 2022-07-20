@@ -5,13 +5,14 @@ import 'react-multi-carousel/lib/styles.css';
 
 import { styled, Box } from '@mui/material';
 
-import img1 from "/home/yuvraj/Clouture/client/src/Images/home-page/apparels.jpeg";
-import img2 from "/home/yuvraj/Clouture/client/src/Images/home-page/sneakers_collection.webp";
-import img3 from "/home/yuvraj/Clouture/client/src/Images/home-page/apparels_Mens.jpg";
-import img4 from "/home/yuvraj/Clouture/client/src/Images/home-page/sneakers.jpeg";
+import img1 from "/home/yuvraj/Clouture/client/src/Images/home_page/apparels.jpeg";
+import img2 from "/home/yuvraj/Clouture/client/src/Images/home_page/sneakers_collection.webp";
+import img3 from "/home/yuvraj/Clouture/client/src/Images/home_page/apparels_Mens.jpg";
+import img4 from "/home/yuvraj/Clouture/client/src/Images/home_page/sneakers.jpeg";
+import img5 from "/home/yuvraj/Clouture/client/src/Images/home_page/banner3.webp";
 
 const CarouselStyle = styled(Carousel)`
-    margin-top: 1em;
+    margin-top: 0.2em;
     width: 60%;
     height: 400;
 `;
@@ -25,18 +26,19 @@ const Image = styled('img')({
 
 const Banner1 = styled('img')({
     position: 'absolute',
-    top: 'calc(86.6em)',
+    top: 'calc(95.3em)',
     left: 'calc(51em)',
     height: '197px',
     width: '39.5%',
-    backgroundColor: 'red'
+    backgroundColor: 'red',
+    marginTop: '0.2em'
 });
 
 const Banner2 = styled('img')({
     position: 'absolute',
-    top: 'calc(99em)',
+    top: 'calc(108em)',
     left: 'calc(51em)',
-    marginTop: '0.3em',
+    marginTop: '0.2em',
     height: '197px',
     width: '39.5%',
     backgroundColor: 'red'
@@ -45,22 +47,27 @@ const Banner2 = styled('img')({
 const BannerBox = styled(Box)`
     height: 300px;
     width: auto;
-    margin-top: 0.3em;
+    margin-top: 0.2em;
 `;
 
 const Banner3 = styled('img')({
     position: 'relative',
-    height: '30em',
-    width: 'calc(49.7%)',
-    marginRight: '0.3em',
-    // border: '1px solid black'
+    height: '20em',
+    width: 'calc(33%)',
+    paddingRight: '0.3em'
 });
 
 const Banner4 = styled('img')({
     position: 'relative',
-    height: '30em',
-    width: 'calc(49.8%)',
-    // border: '1px solid black'
+    height: '20em',
+    width: 'calc(33%)',
+    paddingRight: '0.3em'
+});
+
+const Banner5 = styled('img')({
+  position: 'relative',
+  height: '20em',
+  width: 'calc(33.2%)'
 });
 
 const responsive = {
@@ -111,6 +118,7 @@ const CarouselAndBanners = () => {
     <BannerBox>
         <Banner3 src={img3}></Banner3>
         <Banner4 src={img4}></Banner4>
+        <Banner5 src={img5}></Banner5>
     </BannerBox>
     </>
   )

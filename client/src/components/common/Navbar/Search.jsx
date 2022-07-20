@@ -6,12 +6,11 @@ import SearchIcon from '@mui/icons-material/Search';
 const SearchContainer = styled(Box)`
     background: white;
     height: 1.9em;
-    width: 28em;
+    width: 28.1em;
     z-index: 1;
     position: absolute;
     top: calc(3.5em);
-    left: calc(34em);
-    border-radius: 12px;
+    left: calc(33.8em);
     padding-left: 20px;
     border: 0.1em solid black;
 `;

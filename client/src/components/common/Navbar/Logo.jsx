@@ -1,6 +1,6 @@
 // logo in navbar
 
-import Clouturelogo from '/home/yuvraj/Clouture/client/src/Images/logo/Clouturelogo.png'
+import Clouturelogo from '/home/yuvraj/Clouture/client/src/Images/logo/Clouturelogo.png';
 
 import { styled } from '@mui/material';
 
@@ -10,7 +10,8 @@ const Image = styled('img')({
     height: '7em',
     display: 'flex',
     position: 'absolute',
-    zIndex: 1
+    zIndex: 1,
+    cursor: 'pointer'
 });
 
 const Logo = () => {

@@ -16,22 +16,22 @@ const Nav = styled('nav')`
     z-index: 1;
     position: absolute;
     left: calc(31em);
-    border-bottom: 2px solid black;
-`;
-
-const NavLink = styled('Link')`
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-    cursor: pointer;
+    border-bottom: 2px ridge black;
 `;
 
 const NavMenu = styled('div')`
     display: flex;
     align-items: center;
+`;
+
+const NavLink = styled('Link')`
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 18px 0 1em;
+    height: 100%;
+    cursor: pointer;
 `;
 
 const Navbar = () => {
@@ -43,8 +43,8 @@ const Navbar = () => {
                 <NavLink to="/sneakers">
                     Sneakers
                 </NavLink>
-                <NavLink to="/apprales">
-                    Apprales
+                <NavLink to="/apparels">
+                    Apparels
                 </NavLink>
                 <NavLink to="/protect">
                     Protect
