@@ -2,23 +2,38 @@
 
 import { Favorite, ShoppingCart, AccountCircle } from "@mui/icons-material";
 
-import { styled } from '@mui/material';
-
-const IconBtn = styled('div')`
-    position: absolute;
-    background: transparent;
-    top: calc(1.9em);
-    left: calc(67em);
-    z-Index: 1;
-`;
+import { IconButton } from '@mui/material';
 
 const Icons = () => {
   return (
-        <IconBtn>
-            <Favorite style={{ height: '1.5em', width:'1.5em', marginRight: '0.5em', color: 'black',  cursor: 'pointer'}} />
-            <ShoppingCart style={{ height: '1.5em', width:'1.5em', marginRight: '0.5em', color: 'black',  cursor: 'pointer'}} />
-            <AccountCircle style={{ height: '1.5em', width:'1.5em', color: 'black',  cursor: 'pointer' }}/>
-        </IconBtn>
+        <IconButton disableRipple sx={{
+          position: 'relative',
+          ml: '43.5em',
+          mt: '-1.6em',
+          color: 'black',
+          cursor: 'default'
+          }}>
+            <Favorite sx={{
+              m: 1,
+              height: '1.5em',
+              width:'1.5em',
+              cursor: 'pointer'
+              }} />
+
+            <ShoppingCart sx={{
+              m: 1,
+              height: '1.5em',
+              width:'1.5em',
+              cursor: 'pointer'
+              }} />
+
+            <AccountCircle sx={{
+              m: 1,
+              height: '1.5em',
+              width:'1.5em',
+              cursor: 'pointer'
+              }} />
+        </IconButton>
   )
 }
 

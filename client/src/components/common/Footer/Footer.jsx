@@ -7,8 +7,7 @@ import { styled, Box, Typography, Container, Grid, Link } from "@mui/material";
 import { Drafts, Instagram, Facebook, Twitter } from "@mui/icons-material";
 
 const BoxStyle = styled(Box)`
-  height: auto;
-  width: auto;
+  //position: relative;
   background-color: black;
   margin-top: 188px;
   color: white;

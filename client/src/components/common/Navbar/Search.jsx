@@ -1,17 +1,18 @@
 // Search bar inside navbar
 
 import { InputBase, Box, styled } from "@mui/material";
-import SearchIcon from '@mui/icons-material/Search';
+import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
 
 const SearchContainer = styled(Box)`
+    position: relative;
     background: white;
-    height: 1.9em;
-    width: 28.1em;
-    z-index: 1;
-    position: absolute;
-    top: calc(3.5em);
-    left: calc(33.8em);
-    padding-left: 20px;
+    height: 1.8em;
+    width: 27em;
+    padding-left: 1.2em;
+    padding-bottom: 0.2em;
+    margin-left: 33.8em;
+    margin-top: -1.5em;
     border: 0.1em solid black;
 `;
 
@@ -21,23 +22,18 @@ const InputSearchBase = styled(InputBase)`
     font-size: unset;
 `;
 
-const SearchIconWrapper = styled(Box)`
-    position: absolute;
-    color: black;
-    top: calc(-0.1em);
-    left: calc(0em);
-    padding: 5px;
-    display: flex;
-    z-index: 2;
-`;
-
 const Search = () => {
   return (
     <SearchContainer>
       <InputSearchBase placeholder="Search for products, brands and more" />
-      <SearchIconWrapper>
-          <SearchIcon />
-      </SearchIconWrapper>
+      <IconButton sx={{
+        display: 'flex',
+        color: 'black',
+        ml: '-1em',
+        mt: '-1.5em'
+        }}>
+        <SearchIcon />
+      </IconButton>
     </SearchContainer>
   );
 };

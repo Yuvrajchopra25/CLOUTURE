@@ -2,21 +2,23 @@
 
 import Clouturelogo from '/home/yuvraj/Clouture/client/src/Images/logo/Clouturelogo.png';
 
-import { styled } from '@mui/material';
+import { styled, Box } from '@mui/material';
 
-const Image = styled('img')({
-    background: 'transparent',
-    left: 'calc(7em)',
-    height: '7em',
-    display: 'flex',
-    position: 'absolute',
-    zIndex: 1,
-    cursor: 'pointer'
-});
+const ImgBox = styled(Box)`
+    position: relative;
+    background: transparent;
+    width: 26em;
+    height: 6.5em;
+    display: flex;
+    cursor: pointer;
+    margin-left: 6em;
+`;
 
 const Logo = () => {
   return (
-        <Image src={Clouturelogo} alt="logo" style={{ width: 380 }}/>
+        <ImgBox>
+          <img src={Clouturelogo} alt="logo" style={{ width: '100%' }}/>
+        </ImgBox>
   )
 }
 

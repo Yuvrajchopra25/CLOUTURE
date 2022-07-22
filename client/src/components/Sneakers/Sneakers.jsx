@@ -2,22 +2,32 @@
 
 import SneakerBanner from "/home/yuvraj/Clouture/client/src/Images/Sneakers_page/sneakerBannerImg.webp";
 
-import { styled } from '@mui/material';
+import { styled, Box } from '@mui/material';
 
 // components
 import Navbar from '../common/Navbar/Navbar.jsx';
 
-const SneakerBannerStyle = styled('img')({
-    position: 'static',
-    height: 'auto',
-    width: 'auto'
+const Banner = styled(Box)`
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: auto;
+    width: 100vw;
+    margin-top: 8em;
+`;
+
+const Image = styled('img')({
+    height: '20em',
+    width: '70em'
 })
 
 const Sneakers = () => {
   return (
     <>
       <Navbar />
-      <SneakerBannerStyle src={SneakerBanner} alt="" srcset="" />
+      <Banner>
+        <Image src={SneakerBanner} alt="" srcset="" />
+      </Banner>
     </>
   )
 }

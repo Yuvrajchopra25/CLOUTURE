@@ -21,7 +21,7 @@ const Image = styled('img')({
     width: '70em'
 })
 
-const Apparels = () => {
+const Protect = () => {
   return (
     <>
       <Navbar />
@@ -32,4 +32,4 @@ const Apparels = () => {
   )
 }
 
-export default Apparels;
+export default Protect;
