@@ -1,18 +1,18 @@
-// About us page
+// Apparels page
 
 // components
-import Navbar from "/home/yuvraj/Clouture/client/src/components/common/Navbar/Navbar.jsx";
-import Banners from "./Banners";
-//import Footer from '../common/Footer/Footer.jsx';
+import Navbar from "../common/Navbar/Navbar.jsx";
+import Banner from "../common/Banner.jsx";
+import Content from "./Content.jsx";
 
-const AboutUs = () => {
+const Apparels = () => {
   return (
     <>
       <Navbar />
-      <Banners />
-      {/* <Footer /> */}
+      <Banner />
+      <Content />
     </>
   )
 }
 
-export default AboutUs;
+export default Apparels;

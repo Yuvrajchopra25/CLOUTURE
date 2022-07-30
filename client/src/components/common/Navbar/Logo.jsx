@@ -1,25 +1,28 @@
-// logo in navbar
+// Logo in navbar
 
-import Clouturelogo from '/home/yuvraj/Clouture/client/src/Images/logo/Clouturelogo.png';
+import Clouturelogo from "/home/yuvraj/Clouture/client/src/Images/logo/Clouturelogo.png";
 
-import { styled, Box } from '@mui/material';
+import { Box, styled } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ImgBox = styled(Box)`
-    position: relative;
-    background: transparent;
-    width: 26em;
-    height: 6.5em;
-    display: flex;
-    cursor: pointer;
-    margin-left: 6em;
+  background: transparent;
+  height: fit-content;
 `;
+
+const Image = styled("img")({
+  width: "17em",
+  height: "4.9em",
+});
 
 const Logo = () => {
   return (
-        <ImgBox>
-          <img src={Clouturelogo} alt="logo" style={{ width: '100%' }}/>
-        </ImgBox>
-  )
-}
+    <ImgBox>
+      <Link to="/">
+        <Image src={Clouturelogo} alt="logo" />
+      </Link>
+    </ImgBox>
+  );
+};
 
 export default Logo;

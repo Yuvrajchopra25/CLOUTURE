@@ -1,64 +1,88 @@
 // Two side by side banners below carousel
 
-import img1 from "/home/yuvraj/Clouture/client/src/Images/home_page/jordan_Hist.webp";
+import img1 from "/home/yuvraj/Clouture/client/src/Images/home_page/jordan_Hist.jpg";
 import img2 from "/home/yuvraj/Clouture/client/src/Images/home_page/apparels_Hist.jpg";
 
-import { Grid, styled } from "@mui/material";
-import Button from '@mui/material/Button';
+import { Box, Grid, styled } from "@mui/material";
+import Button from "@mui/material/Button";
+import { NavLink } from "react-router-dom";
 
-const Image1 = styled('img')({
-    width: '100%'
-});
+const BannerContainer = styled(Grid)`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30em;
+  margin-top: 0.2em;
+`;
 
-const Image2 = styled('img')({
-    width: '100%'
-});
-    
-  const Image1Btn = styled(Button)`
-  position: absolute;
-  top: calc(52em);
-  left: calc(4em);
-  height: 3em;
+const Banner1 = styled(Box)`
+  height: 30em;
+  width: calc(50% - 0.1em);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0.2em;
+`;
+
+const Banner2 = styled(Box)`
+  width: calc(50% - 0.1em);
+  height: 30em;
+  object-fit: cover;
+  background-repeat: no-repeat;
+`;
+
+const Image1Btn = styled(Button)`
   color: white;
-  text-transform: none;
-  font-size: 1.2em;
+  top: 20em;
+  left: 5em;
   padding: 1em 1em;
+  font-size: 1em;
+  text-transform: none;
   border: 2px solid white;
-  &:hover{
-        color: black;
-        background-color: white;
-    }
+  &:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+  }
 `;
 
 const Image2Btn = styled(Button)`
-  position: absolute;
-  top: calc(52em);
-  left: calc(40em);
-  height: 3em;
   color: white;
-  text-transform: none;
-  font-size: 1.2em;
+  top: 20em;
+  left: 5em;
   padding: 1em 1em;
+  font-size: 1em;
+  text-transform: none;
   border: 2px solid white;
-  &:hover{
-        color: black;
-        background-color: white;
-    }
+  &:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+  }
+`;
+
+const LinkStyle = styled(NavLink)`
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: black;
+  }
 `;
 
 const History = () => {
   return (
-    <Grid item lg={12} container spacing={0.5} paddingTop={'0.2em'}>
-        <Grid item lg={6}>
-            <Image1 src={img1} alt="jordan_History" srcset="" />
-            <Image1Btn variant="outlined">Read More</Image1Btn>
-        </Grid>
-        <Grid item lg={6}>
-            <Image2 src={img2} alt="apparels_History" srcset="" />
-            <Image2Btn variant="outlined">Read More</Image2Btn>
-        </Grid>
-    </Grid>
-  )
-}
+    <BannerContainer container>
+      <Banner1 sx={{ backgroundImage: `url(${img1})` }}>
+        <LinkStyle to="/sneakers">
+          <Image1Btn variant="outlined">Read More</Image1Btn>
+        </LinkStyle>
+      </Banner1>
+      <Banner2 sx={{ backgroundImage: `url(${img2})` }}>
+        <LinkStyle to="/apparels">
+          <Image2Btn variant="outlined">Read More</Image2Btn>
+        </LinkStyle>
+      </Banner2>
+    </BannerContainer>
+  );
+};
 
 export default History;

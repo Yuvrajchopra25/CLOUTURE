@@ -6,9 +6,9 @@ import Navbar from '../common/Navbar/Navbar.jsx';
 import History from './History.jsx';
 import SneakersSlider from './SneakersSlider.jsx';
 import CarouselAndBanners from './CarouselAndBanners.jsx';
+import ThreeSmallBanner from './ThreeSmallBanner.jsx';
 import ApparelsSlider from './ApparelsSlider.jsx';
 import BottomBanner from './BottomBanner.jsx';
-import Footer from '../common/Footer/Footer.jsx';
 
 const Home = () => {
   return (
@@ -18,9 +18,9 @@ const Home = () => {
       <History />
       <SneakersSlider />
       <CarouselAndBanners />
+      <ThreeSmallBanner />
       <ApparelsSlider />
       <BottomBanner />
-      <Footer />
     </>
   )
 }
